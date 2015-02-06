@@ -21,3 +21,11 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
 
+development:
+  host: localhost
+  adapter: postgresql
+  database: resumisto
+  pool: 5
+  username: seanfreiburg
+  password:
+

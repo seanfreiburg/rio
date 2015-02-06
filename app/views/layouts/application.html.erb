@@ -14,7 +14,9 @@
 <% if alert %>
     <p class="alert"><%= alert %></p>
 <% end %>
+<%= render 'shared/static_navbar' %>
 <%= yield %>
 
+<%= render 'shared/footer' %>
 </body>
 </html>
