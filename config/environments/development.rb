@@ -40,4 +40,17 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_options = {from: 'no-reply@resumisto.com'}
+  config.action_mailer.smtp_settings = {
+      address:              'smtp.mandrillapp.com',
+      port:                 587,
+      domain:               'resumisto.com',
+      user_name:            'seanfreiburg@gmail.com',
+      password:             'Cg38-LwJxEy4YP1XYN-mnw',
+      authentication:       'login',
+      enable_starttls_auto: true  }
+
 end
