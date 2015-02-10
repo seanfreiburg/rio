@@ -7,6 +7,8 @@ Rails.application.routes.draw do
                                    unlocks: "users/unlocks"
                    }
 
+  resources :resumes
+
   get 'about' => 'static_pages#about', as: :about
 
   get 'contact' => 'static_pages#contact', as: :contact
